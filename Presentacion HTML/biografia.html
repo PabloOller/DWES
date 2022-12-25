@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía</title>
+    <link rel="stylesheet" href="biografia.css">
+</head>
+
+<body>
+    <script>
+        var textos = [
+            "Yo con 6 años",
+            "Mi hermana la dramas",
+            "maro",
+            "Leo y yo"
+        ]
+
+
+        function cargarfoto(img, txt) {
+            document.getElementById("galeria").src = "multimedia/" + img + ".jpg";
+            document.getElementById("mitexto").innerHTML = textos[txt];
+        }
+    </script>
+    <div id="main">
+        <h1>Biografía</h1>
+        <header>
+            <div class="botones">
+                <button><a href="index.html">inicio</a></button>
+                <button><a href="biografia.html">biografia</a></button>
+                <button><a href="estudios.html">estudios</a></button>
+                <button><a href="tiempo_libre.html">tiempo libre</a></button>
+                <button><a href="programacion.html">en cuanto a la programación</a></button>
+                <button><a href="futuro.html">se vienen cositas</a></button>
+                <button><a href="deportes.html">deportes</a></button>
+                <button><a href="mascotas.html">mascotas</a></button>
+            </div>
+        </header>
+
+        <article id ="texto">
+            <blockquote>
+                Yo nací en un precioso viernes, 17 de noviembre en Málaga, fui el primer nieto de toda mi familia y pues
+                me
+                convertí en el protagonista de ella. Conforme iba creciendo iba aumentando mi gusto por la música
+                y el deporte, siempre estaba de pequeño en clases extraescolares de música, natación, pádel, etc.
+
+                Siempre estuve viviendo en Alhaurín los 9 años empecé a vivir en otros lados de Málaga, Alhaurín el
+                Grande,
+                Málaga centro, los montes de Málaga y torremolinos. Vivir en esos sitios me ha abierto muchísimo la
+                mente.
+                Actualmente vivo en Alhaurín pero en un futuro me gustaría vivir en el norte de Europa tanto por su
+                clima
+                como su vanguardia en tecnología y sociedad.
+            </blockquote>
+        </article>
+        <aside>
+            <img id="galeria" src="multimedia/1.jpg" alt="">
+            <p id="mitexto">algunas de los recuerdos de mi infancia</p>
+
+
+            <div>
+                <ul>
+                    <li><a onclick="cargarfoto(1,0)"><img src="multimedia/1.jpg" alt=""></a></li>
+                    <li><a onclick="cargarfoto(2,1)"><img src="multimedia/2.jpg" alt=""></a></li>
+                    <li><a onclick="cargarfoto(3,2)"><img src="multimedia/3.jpg" alt=""></a></li>
+                    <li><a onclick="cargarfoto(4,3)"><img src="multimedia/4.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </aside>
+        <footer>
+            <div class="click-copyrights-text">Pablo Oller © 2022</div>
+            <br>
+            <a href="https://www.instagram.com/paablooller/?hl=es"><img src="multimedia\insta.png" width="32px"
+                    height="32px"></a>
+            <a href="https://es.linkedin.com/in/pablo-oller-p%C3%A9rez-7995721b2?trk=people-guest_people_search-card"><img
+                    src="multimedia\linkeidn.png" width="32px" height="32px"></a>
+            <a href="https://github.com/PabloOller"><img src="multimedia\github.png" width="32px" height="32px"></a>
+        </footer>
+    </div>
+</body>
+
+
+</html>

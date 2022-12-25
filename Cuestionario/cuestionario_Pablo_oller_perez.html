@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cuestionario</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgreen;
+        }
+
+        form {
+            margin-top: 50px;
+            border: solid 2px green;
+            border-radius: 20px;
+            margin-left: 25%;
+            width: 700px;
+            background-color: rgb(214, 245, 207);
+            padding-left: 10px;
+        }
+
+        form h1 {
+            color: green;
+        }
+        form p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="https://educacionadistancia.juntadeandalucia.es/centros/malaga/pluginfile.php/570715/assignsubmission_file/submission_files/114475/cuestionario_Pablo_oller_perez.php" method="POST">
+        <h1>Bienvenido al portal de creación de cuentas</h1>
+        <p>A continuación se van a presentar una serie de datos a rellenar con tus datos personales, rellénalos bien.
+        </p>
+        <p>
+            ¿Cuál es tu nombre?
+            <br>
+            <br>
+            <input type="text" name="nombre" size="10">
+            <br>
+            <br>
+            ¿Cuáles son tus apellidos?
+            <br>
+            <br>
+            <input type="text" name="apellidos" size="10">
+        </p>
+        <p>
+            Indica tu fecha de nacimiento:
+            <input type="date" name="fecha">
+        </p>
+        <p>
+            ¿Cuál es tu correo electrónico?
+            <br>
+            <br>
+            <input type="email" placeholder="example@example.com" name="correo">
+        </p>
+        <p>
+            Elige tu nombre de usuario:
+            <br>
+            <br>
+            <input type="text" name="usuario" size="10">
+            <br>
+            Crea tu contraseña (debe tener al menos 4 caracteres):
+            <br>
+            <br>
+            <input type="password" name="contraseña" size="10">
+            <br>
+            <br>
+            Repite la contraseña:
+            <br>
+            <br>
+            <input type="password" name="contraseña2" size="10">
+
+        </p>
+        <p>
+            ¿Qué te gusta hacer en tu tiempo libre?
+            <br>
+
+        <table>
+            <tr>
+                <td> <input type="checkbox" name="casilla1"> Ver series y películas.</td>
+                <td><input type="checkbox" name="casilla2"> Salir con tus amigos.</td>
+                <td> <input type="checkbox" name="casilla3"> Jugar videojuegos.</td>
+            </tr>
+            <tr>
+                <td> <input type="checkbox" name="casilla4"> Hacer deporte.</td>
+                <td> <input type="checkbox" name="casilla5"> Escuchar música.</td>
+                <td> <input type="checkbox" name="casilla6"> No tienes tiempo libre.</td>
+            </tr>
+        </table>
+
+
+        </p>
+        <p>
+            Selecciona tu género:
+            <br>
+            <br>
+            <input type="radio" name="radio1" value="uno"> Hombre
+            <input type="radio" name="radio1" value="dos"> Mujer
+            <input type="radio" name="radio1" value="tres"> Prefiero no decirlo
+            <input type="radio" name="radio1" value="cuatro"> Helicóptero apache de combate😈
+        </p>
+        <p>
+            Indica tu número de teléfono: <input type="tel" name="telefono" size="10">
+        </p>
+
+        <p>
+            Selecciona tu idioma principal:
+            <select name="menu1">
+                <option></option>
+                <option>Español</option>
+                <option>Inglés</option>
+                <option>Francés</option>
+                <option>Portugués</option>
+                <option>Italiano</option>
+                <option>Árabe</option>
+                <option>Chino</option>
+                <option>Indio</option>
+                <option>Otro</option>
+            </select>
+        </p>
+        <p>
+            Ingresa tu foto de perfil:
+            <br>
+            <br>
+            <input type="file" name="fperfil" value="foto">
+
+        </p>
+        <br>
+        <input type="hidden" name="oculto" value="Te has logado correctamente :)">
+        <center><input type="submit" name="enviar" value="Enviar"></center>
+        <br>
+    </form>
+</body>
+
+</html>

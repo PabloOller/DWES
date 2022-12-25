@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <form action="validar.php" method="post">
+        <div class="elem-group">
+            <label for="name">Su Nombre</label>
+            <input type="text" id="name" name="visitor_name" placeholder="Nombre" pattern="[A-Z\sa-z]{3,20}" required="">
+        </div>
+        <div class="elem-group">
+            <label for="email">Su E-mail</label>
+            <input type="email" id="email" name="visitor_email" placeholder="correo@email.com" required="">
+        </div>
+        <div class="elem-group">
+            <label for="department-selection">Elija el Departamento</label>
+            <select id="department-selection" name="concerned_department" required="">
+                <option value="">Seleciona el Departamento</option>
+                <option value="billing">Informática</option>
+                <option value="marketing">Lenguaje</option>
+                <option value="technical support">Matemáticas</option>
+            </select>
+        </div>
+        <div class="elem-group">
+            <label for="title">Razón para contactar con nosotros</label>
+            <input type="text" id="title" name="email_title" required=""
+                placeholder="No puedo restablecer mi contraseña" pattern="[A-Za-z0-9\s]{8,60}">
+        </div>
+        <div class="elem-group">
+            <label for="message">Escriba su mensaje</label>
+            <textarea id="message" name="visitor_message" placeholder="Que desea decirle." required=""></textarea>
+        </div>
+        <button name = "Enviar" type="submit">Enviar mensaje</button>
+    </form>
+
+
+</body>
+
+</html>
